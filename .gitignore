@@ -1,0 +1,6 @@
+.env
+env
+flask
+venv
+.vscode
+__pycache__
