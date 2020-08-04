@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>weather report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}">
+  </head>
+  <body>
+    <section src="{{url_for('static', filename='somejavascriptfile.js')}}">
+    <div class="weather-flex">
+        <div class="title-has-text-centered weather-title">
+          <h1 class="title">
+             weather info
+          </h1>
+        </div>
+     <div class="form">
+      <form method="POST" class="weather form">    
+        <div class="weather-input-container">
+            <div class="weather-input mb-4">
+              <form id="place" onsubmit="return handle_form()"></form>
+                <input class="input is rounded" type="text" id="place" name="place" placeholder="Enter place name">
+            </div>
+            <div class="weather-input-submit"> </div>
+            <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-link">Submit</button>
+      </div>
+      </form>
+     </div>
+</div>
+      </div>  
+    </div>
+    </div> 
+    </div>
+  </section>
+  </body>
+</html>
