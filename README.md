@@ -11,7 +11,7 @@
   3.And finally run the application with command as "python3 -m flask run"
 
   ## How to Run:
-   1.Once a collaborator pulls down your project - they can then install a fresh python environment that is,
+    1.Once a collaborator pulls down your project - they can then install a fresh python environment that is,
 
       "python3 -m venv local_python_environment"
     
