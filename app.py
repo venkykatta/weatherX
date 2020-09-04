@@ -8,10 +8,10 @@ app = Flask(__name__, template_folder='template')
 
 @app.route('/')
 def index():
-    return render_template("index.html") 
+    return render_template("index.html")
 
 
-@app.route('/', methods=['POST'])           
+@app.route('/', methods=['POST'])       
 def Onsubmit():
     place = request.form['place']                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     API_KEY = 'e03b0e4011564a1a9e11eb7086d70d1e'
