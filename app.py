@@ -10,10 +10,6 @@ app = Flask(__name__, template_folder='template')
 def index():
     return render_template("index.html") 
 
-@app.route('/users' , methods=['POST'])     
-def welcome():
-    return "welcome"   
-
 
 @app.route('/', methods=['POST'])           
 def Onsubmit():
