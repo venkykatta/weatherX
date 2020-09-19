@@ -3,22 +3,76 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>weahter info</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <link rel= "stylesheet"  href= "{{ url_for('static',filename='styles/bulmacard.css') }}">
-
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/bulmacard.css') }}">
 </head>
-    <div class="card">
-        <div class="card-content">
-                <p>
-                    <span class="title">{{ weather.place }}</span>
-                    <br>
-                    <span class="subtitle" style="font-weight:bold"> Temperature: {{ weather.temparature }}° C</span>
-                </p>
+
+<body>
+    <div class="grid-container">
+        <div class="row">
+            <div class="column">
+                <div class="has-background-success-light">
+                <div class="card">
+                    <p>City</p> 
+                    <span class="title"> {{weather.place}} </span>
+                </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <p>temparature</p>
+                    <span class="title"> {{weather.temperature}}°c </span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <p>description</p>
+                    <span class="title"> {{weather.description}} </span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <p>pressure</p>
+                    <span class="title"> {{weather.pressure}} mb </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <p>humidity</p>
+                    <span class="title"> {{weather.humidity}}% </span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <p>wind_speed</p>
+                    <span class="title"> {{weather.wind_speed}} m/sec </span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <p>clouds</p>
+                    <span class="title"> {{weather.clouds}}% </span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <p>country</p>
+                    <span class="title"> {{weather.country}} </span>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 
-</html> 
+</html>
