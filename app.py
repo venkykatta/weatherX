@@ -2,7 +2,6 @@
 from flask import Flask, request, render_template , url_for , redirect  
 import requests  
 
-from markupsafe import escape
 
 app = Flask(__name__, template_folder='template')
 
@@ -31,7 +30,7 @@ def Onsubmit():
         'country' : weather_info["sys"]["country"]
     }
     
-    return render_template('bulmacard.html', weather = weather)
+    return render_template('bulmacard.html', weather=weather)
     
          
 if __name__ == '__main__':
