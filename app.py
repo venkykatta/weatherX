@@ -2,7 +2,6 @@
 from flask import Flask, request, render_template , url_for , redirect  
 import requests  
 
-from markupsafe import escape
 
 app = Flask(__name__, template_folder='template')
 
@@ -18,14 +17,20 @@ def Onsubmit():
     url = f'http://api.openweathermap.org/data/2.5/weather?q={place}&APPID={API_KEY}&units=metric'
     weather_info = requests.get(url).json()
     
+    
     weather = {
         'place' : place,
-        'temparature' : weather_info["main"]["temp"],
+        'description' : weather_info["weather"][0]["description"],
+        'icon' : weather_info["weather"][0]["icon"],
+        'temperature' : weather_info["main"]["temp"],
+        'pressure' : weather_info["main"]["pressure"],
+        'humidity' : weather_info["main"]["humidity"],
+        'wind_speed' : weather_info["wind"]["speed"],
+        'clouds' : weather_info["clouds"]["all"],
+        'country' : weather_info["sys"]["country"]
     }
     
-    
     return render_template('bulmacard.html', weather=weather)
-
     
          
 if __name__ == '__main__':
