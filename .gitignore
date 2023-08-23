@@ -3,3 +3,4 @@ __pycache__
 env
 flask
 install.sh
+local_python_environment
