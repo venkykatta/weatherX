@@ -37,15 +37,25 @@ body {
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px 0 rgba(25, 34, 43, 0.2);
   padding: 15px;
   /* height: 10px; */
   text-align: left;
-  background-color: #f1f1f1;
+  background-color: rgb(101, 101, 117);
+  /* border-end-end-radius: 30px; */
+  border-radius: 10px;
 }
 
 .grid-container {
   grid-row-gap: 70px;
   display: grid;
   margin-top: 20px;
+}
+
+.title {
+  color: white;
+}
+
+p {
+  color: bisque;
 }

@@ -27,7 +27,7 @@ def Onsubmit():
         'humidity' : weather_info["main"]["humidity"],
         'wind_speed' : weather_info["wind"]["speed"],
         'clouds' : weather_info["clouds"]["all"],
-        'country' : weather_info["sys"]["country"]
+        'country' : weather_info["sys"]["country"],
     }
     
     return render_template('bulmacard.html', weather=weather)

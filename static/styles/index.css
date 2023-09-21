@@ -1,3 +1,22 @@
-.weather-flex {
-    text-align: center;
+.title{
+  font-family: 'Comfortaa', cursive;
+  padding: 20px;
+  color: rgb(251, 250, 252);
 }
+.container{
+    /* background-color: aqua; */
+    width: 50%;
+}
+
+.form{
+    margin-top: 10px;
+    ::placeholder{
+        color: rgb(130, 121, 139);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+html{
+    background-color: rgb(101, 101, 117);
+}
+
