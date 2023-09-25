@@ -19,7 +19,7 @@ def Onsubmit():
     
     
     weather = {
-        'place' : place,
+        'place' : place.capitalize(),
         'description' : weather_info["weather"][0]["description"],
         'icon' : weather_info["weather"][0]["icon"],
         'temperature' : weather_info["main"]["temp"],
